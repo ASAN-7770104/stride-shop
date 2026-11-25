@@ -1,104 +1,32 @@
-# STRIDE — Группа проект (Web Development I)
+# STRIDE, a group project (Web Development I)
 
-Премиум интернет-магазин кроссовок. Чистый HTML / CSS / JavaScript — **без фреймворков и библиотек**.
+**English** · [Русский](README.ru.md)
 
----
+A premium sneaker shop in plain HTML, CSS and JavaScript, with **no frameworks or libraries**.
 
-## 📦 Структура проекта
+## Structure
 
 ```
-stride-shop/
-├── index.html      ← Главная страница (каталог)
-├── cart.html       ← Страница корзины
-├── styles.css      ← Все стили (адаптивные)
-├── script.js       ← Вся логика (корзина, валидация и т.д.)
-└── README.md       ← Этот файл
+index.html    catalogue
+cart.html     cart
+styles.css    all styles, responsive
+script.js     cart, validation and the rest of the logic
 ```
 
----
+## Features
 
-## ✅ Соответствие требованиям задания
+- Catalogue with category filters and a cart with quantities and automatic totals, including 12% tax
+- The cart is kept in `localStorage`; a counter badge in the header
+- Order form validation and a success dialog with an order number
+- Responsive layout for desktop, tablet and phone, with a mobile menu
+- Semantic HTML, `aria` attributes and respect for reduced motion
 
-| Требование | Где реализовано |
-|---|---|
-| Страница каталога | `index.html` — секция `.catalogue` |
-| Страница корзины (Корзина) | `cart.html` |
-| Картинка товара | поле `image` в `PRODUCTS` (`script.js`) + `.product__media` |
-| Цена | `.product__price` |
-| Описание | `.product__desc` |
-| Количество | `.qty` контролы на странице корзины |
-| Автоподсчёт суммы | `Cart.subtotal()` + `updateSummary()` в `script.js` |
-| Адаптивность (3 экрана) | media queries в `styles.css`: десктоп (>1024), планшет (≤1024), мобильный (≤720) |
-| Качественный дизайн | Фирменная типографика (Fraunces + DM Sans), цветовая система через CSS-переменные, плавные анимации |
-| Без фреймворков/библиотек | Только vanilla HTML/CSS/JS |
-| Свой код, не скопированный | Написано с нуля под задание |
+## Run
 
----
+Open `index.html` in a browser. Nothing has to be installed.
 
-## 🚀 Дополнительные фичи (выше стандартных требований)
+## Team
 
-1. **Сохранение корзины в localStorage** — товары не пропадают при перезагрузке.
-2. **Бейдж со счётчиком товаров** в шапке (с pop-анимацией при добавлении).
-3. **Фильтрация товаров** по категориям (Running / Lifestyle / Basketball).
-4. **Toast-уведомления** при добавлении товара.
-5. **Модальное окно успешного заказа** с генерацией номера.
-6. **Полная валидация формы** заказа (имя, email, телефон, адрес, способ оплаты).
-7. **Мобильное меню-бургер** для маленьких экранов.
-8. **Hover-анимации** карточек, кнопок, изображений.
-9. **Семантичный HTML5** (`<header>`, `<main>`, `<section>`, `<aside>`, `<footer>`).
-10. **Доступность (a11y)**: `aria-*` атрибуты, поддержка `prefers-reduced-motion`.
-11. **Эмпти-стейт** на пустой корзине.
-12. **Расчёт налога** (12%) и итоговой суммы.
+A team project: Assanali, Mansur, Alexey.
 
----
-
-## 🎨 Дизайн-система
-
-- **Шрифты:** Fraunces (заголовки, серифный с характером) + DM Sans (текст)
-- **Цвета:**
-  - `--bg: #f5f2ec` — тёплый кремовый фон
-  - `--ink: #1a1a1a` — основной текст
-  - `--accent: #ff4438` — коралловый акцент
-  - `--line: #e6e2da` — границы
-- **Анимации:** все переходы через `cubic-bezier`, есть respect `prefers-reduced-motion`.
-
----
-
-## 📱 Брейкпоинты адаптива
-
-| Экран | Ширина | Что меняется |
-|---|---|---|
-| **Десктоп** | > 1024px | 4 колонки в каталоге, полное меню в шапке |
-| **Планшет** | ≤ 1024px | 3 колонки в каталоге, секция About вертикально |
-| **Мобильный** | ≤ 720px | 1 колонка, бургер-меню, перестроенные карточки корзины |
-
----
-
-## ▶️ Как запустить
-
-1. Скачай папку `stride-shop`.
-2. Открой `index.html` в браузере (двойной клик).
-3. Готово. Никаких сборщиков и зависимостей не нужно.
-
-> Совет: для разработки удобно использовать расширение **Live Server** в VS Code — оно автообновляет страницу при изменениях.
-
----
-
-## 🧪 Что протестировать перед сдачей
-
-- [ ] Добавление товара в корзину со страницы каталога.
-- [ ] Изменение количества на странице корзины (+, −).
-- [ ] Удаление товара.
-- [ ] Автопересчёт subtotal / tax / total.
-- [ ] Перезагрузка страницы → корзина сохранилась.
-- [ ] Фильтр по категориям.
-- [ ] Валидация формы (попробуй submit с пустыми полями).
-- [ ] Успешный заказ → модалка с номером заказа.
-- [ ] Открытие на телефоне (или DevTools → mobile view).
-- [ ] Открытие на планшете (768–1024px).
-
----
-
-## 👥 Команда
-
-Командный проект: Assanali, Mansur, Alexey.
+The full description of the assignment requirements is in the [Russian version](README.ru.md).
