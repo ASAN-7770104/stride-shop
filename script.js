@@ -1,17 +1,4 @@
-/* =====================================================
-   STRIDE — Shop Logic
-   Vanilla JavaScript · No frameworks
-   Features:
-     • Product catalogue rendering
-     • Category filtering
-     • Cart with localStorage persistence
-     • Auto-calculation of totals (subtotal, tax, total)
-     • Quantity controls (increase, decrease, remove)
-     • Form validation
-     • Mobile menu
-     • Toast notifications
-     • Order success modal
-   ===================================================== */
+
 
 (() => {
   'use strict';
