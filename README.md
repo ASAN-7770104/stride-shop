@@ -2,6 +2,8 @@
 
 **English** · [Русский](README.ru.md)
 
+![STRIDE home page](docs/home.png)
+
 A premium sneaker shop in plain HTML, CSS and JavaScript, with **no frameworks or libraries**.
 
 ## Structure
